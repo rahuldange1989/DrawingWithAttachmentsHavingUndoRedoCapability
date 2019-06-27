@@ -13,7 +13,7 @@
 		5FF813D822C4A1D300AC4781 /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF813D722C4A1D300AC4781 /* Drawing.swift */; };
 		5FF813DA22C4A28400AC4781 /* AttachmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF813D922C4A28400AC4781 /* AttachmentModel.swift */; };
 		5FF813DC22C4A2C100AC4781 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF813DB22C4A2C100AC4781 /* Line.swift */; };
-		5FF813DF22C4ADF900AC4781 /* MainCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF813DD22C4ADF900AC4781 /* MainCanvas.swift */; };
+		5FF813DF22C4ADF900AC4781 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF813DD22C4ADF900AC4781 /* Container.swift */; };
 		5FF813E022C4ADF900AC4781 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF813DE22C4ADF900AC4781 /* DrawingView.swift */; };
 		5FF813E222C4B52F00AC4781 /* Pen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF813E122C4B52F00AC4781 /* Pen.swift */; };
 		5FF813E522C4C2ED00AC4781 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF813E422C4C2ED00AC4781 /* UIImageExtension.swift */; };
@@ -40,7 +40,7 @@
 		5FF813D722C4A1D300AC4781 /* Drawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawing.swift; sourceTree = "<group>"; };
 		5FF813D922C4A28400AC4781 /* AttachmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentModel.swift; sourceTree = "<group>"; };
 		5FF813DB22C4A2C100AC4781 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
-		5FF813DD22C4ADF900AC4781 /* MainCanvas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCanvas.swift; sourceTree = "<group>"; };
+		5FF813DD22C4ADF900AC4781 /* Container.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
 		5FF813DE22C4ADF900AC4781 /* DrawingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		5FF813E122C4B52F00AC4781 /* Pen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pen.swift; sourceTree = "<group>"; };
 		5FF813E422C4C2ED00AC4781 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 				5FF813D922C4A28400AC4781 /* AttachmentModel.swift */,
 				5FF813DB22C4A2C100AC4781 /* Line.swift */,
 				5FF813DE22C4ADF900AC4781 /* DrawingView.swift */,
-				5FF813DD22C4ADF900AC4781 /* MainCanvas.swift */,
+				5FF813DD22C4ADF900AC4781 /* Container.swift */,
 				5FF813E122C4B52F00AC4781 /* Pen.swift */,
 				5FF813E422C4C2ED00AC4781 /* UIImageExtension.swift */,
 			);
@@ -217,7 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FF813DF22C4ADF900AC4781 /* MainCanvas.swift in Sources */,
+				5FF813DF22C4ADF900AC4781 /* Container.swift in Sources */,
 				5FF813D822C4A1D300AC4781 /* Drawing.swift in Sources */,
 				5FF813DC22C4A2C100AC4781 /* Line.swift in Sources */,
 				5FF813E022C4ADF900AC4781 /* DrawingView.swift in Sources */,

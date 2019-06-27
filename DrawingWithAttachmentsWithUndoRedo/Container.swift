@@ -7,16 +7,16 @@
 
 import Foundation
 
-protocol MainCanvasDelegate
+protocol ContainerDelegate
 {
-    func canvas(_ canvas: MainCanvas, didUpdateDrawing drawing: Drawing?, mergedImage image: UIImage?)
-    func canvas(_ canvas: MainCanvas, didSaveDrawing drawing: Drawing, mergedImage image: UIImage?)
-    func canvas(_ canvas: MainCanvas, didDraftDrawing drawing: Drawing, mergedImage image: UIImage?)
-    func canvas(_ canvas: MainCanvas, enableEditing: Bool)
+    func container(_ canvas: Container, didUpdateDrawing drawing: Drawing?, mergedImage image: UIImage?)
+    func container(_ canvas: Container, didSaveDrawing drawing: Drawing, mergedImage image: UIImage?)
+    func container(_ canvas: Container, didDraftDrawing drawing: Drawing, mergedImage image: UIImage?)
+    func container(_ canvas: Container, enableEditing: Bool)
 }
 
-public class MainCanvas: UIView {
-    var delegate: MainCanvasDelegate?
+public class Container: UIView {
+    var delegate: ContainerDelegate?
     fileprivate var backgroundImageView: UIImageView?
     fileprivate var session: DrawingSession = DrawingSession.init(maxSessionSize: 100)
     fileprivate var drawing = Drawing()
@@ -124,7 +124,7 @@ public class MainCanvas: UIView {
     }
     
     fileprivate func didUpdateCanvas() {
-        self.delegate?.canvas(self, didUpdateDrawing: nil, mergedImage: nil)
+        self.delegate?.container(self, didUpdateDrawing: nil, mergedImage: nil)
     }
     
     fileprivate func isStrokeEqual() -> Bool {
@@ -144,7 +144,7 @@ public class MainCanvas: UIView {
         image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
-        self.delegate?.canvas(self, didSaveDrawing: self.drawing, mergedImage: image)
+        self.delegate?.container(self, didSaveDrawing: self.drawing, mergedImage: image)
     }
     
     fileprivate func saveDraftImage() {
@@ -152,12 +152,12 @@ public class MainCanvas: UIView {
         self.layer.render(in: UIGraphicsGetCurrentContext()!)
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        self.delegate?.canvas(self, didDraftDrawing: self.drawing, mergedImage: image)
+        self.delegate?.container(self, didDraftDrawing: self.drawing, mergedImage: image)
     }
 }
 
 // MARK: - Public Methods -
-extension MainCanvas {
+extension Container {
     open func addViewToUndo(view: UIView, frame: CGRect, isFirstTime: Bool, fontSize: Float = 0.0, text: String = "", isFromDelete: Bool = false) {
         
         if isFirstTime {
@@ -276,7 +276,7 @@ extension MainCanvas {
 }
 
 // MARK: - Drawing view delegate methods -
-extension MainCanvas : DrawingViewDelegate {
+extension Container : DrawingViewDelegate {
     public func drawingViewUpdated() {
         self.session.append(session: self.currentDrawing())
         self.didUpdateCanvas()
@@ -294,7 +294,7 @@ extension MainCanvas : DrawingViewDelegate {
                 }
                 currentView?.isUserInteractionEnabled = false
                 self.bringSubviewToFront(self.drawingView!)
-                self.delegate?.canvas(self, enableEditing: true)
+                self.delegate?.container(self, enableEditing: true)
             }
         }
     }

@@ -7,9 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5FF813BC22C46B9500AC4781 /* DrawingWithAttachmentsWithUndoRedo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FF813B222C46B9400AC4781 /* DrawingWithAttachmentsWithUndoRedo.framework */; };
 		5FF813C122C46B9500AC4781 /* DrawingWithAttachmentsWithUndoRedoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF813C022C46B9500AC4781 /* DrawingWithAttachmentsWithUndoRedoTests.swift */; };
 		5FF813C322C46B9500AC4781 /* DrawingWithAttachmentsWithUndoRedo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FF813B522C46B9400AC4781 /* DrawingWithAttachmentsWithUndoRedo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FF813D522C4A02200AC4781 /* DrawingSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF813D422C4A02200AC4781 /* DrawingSession.swift */; };
+		5FF813D822C4A1D300AC4781 /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF813D722C4A1D300AC4781 /* Drawing.swift */; };
+		5FF813DA22C4A28400AC4781 /* AttachmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF813D922C4A28400AC4781 /* AttachmentModel.swift */; };
+		5FF813DC22C4A2C100AC4781 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF813DB22C4A2C100AC4781 /* Line.swift */; };
+		5FF813DF22C4ADF900AC4781 /* MainCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF813DD22C4ADF900AC4781 /* MainCanvas.swift */; };
+		5FF813E022C4ADF900AC4781 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF813DE22C4ADF900AC4781 /* DrawingView.swift */; };
+		5FF813E222C4B52F00AC4781 /* Pen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF813E122C4B52F00AC4781 /* Pen.swift */; };
+		5FF813E522C4C2ED00AC4781 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF813E422C4C2ED00AC4781 /* UIImageExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +36,14 @@
 		5FF813BB22C46B9500AC4781 /* DrawingWithAttachmentsWithUndoRedoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawingWithAttachmentsWithUndoRedoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FF813C022C46B9500AC4781 /* DrawingWithAttachmentsWithUndoRedoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingWithAttachmentsWithUndoRedoTests.swift; sourceTree = "<group>"; };
 		5FF813C222C46B9500AC4781 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FF813D422C4A02200AC4781 /* DrawingSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingSession.swift; sourceTree = "<group>"; };
+		5FF813D722C4A1D300AC4781 /* Drawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawing.swift; sourceTree = "<group>"; };
+		5FF813D922C4A28400AC4781 /* AttachmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentModel.swift; sourceTree = "<group>"; };
+		5FF813DB22C4A2C100AC4781 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		5FF813DD22C4ADF900AC4781 /* MainCanvas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCanvas.swift; sourceTree = "<group>"; };
+		5FF813DE22C4ADF900AC4781 /* DrawingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
+		5FF813E122C4B52F00AC4781 /* Pen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pen.swift; sourceTree = "<group>"; };
+		5FF813E422C4C2ED00AC4781 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +58,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FF813BC22C46B9500AC4781 /* DrawingWithAttachmentsWithUndoRedo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +87,14 @@
 			children = (
 				5FF813B522C46B9400AC4781 /* DrawingWithAttachmentsWithUndoRedo.h */,
 				5FF813B622C46B9400AC4781 /* Info.plist */,
+				5FF813D422C4A02200AC4781 /* DrawingSession.swift */,
+				5FF813D722C4A1D300AC4781 /* Drawing.swift */,
+				5FF813D922C4A28400AC4781 /* AttachmentModel.swift */,
+				5FF813DB22C4A2C100AC4781 /* Line.swift */,
+				5FF813DE22C4ADF900AC4781 /* DrawingView.swift */,
+				5FF813DD22C4ADF900AC4781 /* MainCanvas.swift */,
+				5FF813E122C4B52F00AC4781 /* Pen.swift */,
+				5FF813E422C4C2ED00AC4781 /* UIImageExtension.swift */,
 			);
 			path = DrawingWithAttachmentsWithUndoRedo;
 			sourceTree = "<group>";
@@ -148,6 +170,7 @@
 				TargetAttributes = {
 					5FF813B122C46B9400AC4781 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					5FF813BA22C46B9500AC4781 = {
 						CreatedOnToolsVersion = 10.1;
@@ -194,6 +217,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FF813DF22C4ADF900AC4781 /* MainCanvas.swift in Sources */,
+				5FF813D822C4A1D300AC4781 /* Drawing.swift in Sources */,
+				5FF813DC22C4A2C100AC4781 /* Line.swift in Sources */,
+				5FF813E022C4ADF900AC4781 /* DrawingView.swift in Sources */,
+				5FF813D522C4A02200AC4781 /* DrawingSession.swift in Sources */,
+				5FF813E222C4B52F00AC4781 /* Pen.swift in Sources */,
+				5FF813DA22C4A28400AC4781 /* AttachmentModel.swift in Sources */,
+				5FF813E522C4C2ED00AC4781 /* UIImageExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +372,7 @@
 		5FF813C722C46B9500AC4781 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -350,6 +382,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = DrawingWithAttachmentsWithUndoRedo/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -358,6 +391,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rs.DrawingWithAttachmentsWithUndoRedo;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +400,7 @@
 		5FF813C822C46B9500AC4781 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -375,6 +410,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = DrawingWithAttachmentsWithUndoRedo/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -391,6 +427,7 @@
 		5FF813CA22C46B9500AC4781 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 53XT5T6645;
 				INFOPLIST_FILE = DrawingWithAttachmentsWithUndoRedoTests/Info.plist;
@@ -409,6 +446,7 @@
 		5FF813CB22C46B9500AC4781 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 53XT5T6645;
 				INFOPLIST_FILE = DrawingWithAttachmentsWithUndoRedoTests/Info.plist;
